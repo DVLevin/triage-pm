@@ -38,6 +38,10 @@ Detailed evidence: `VERIFICATION.md`. Screenshots remain gitignored under `.runt
 - Notes: CTA wording, restoration, and context-summary target.
 - **Verdict:** BLOCKED.
 
+### Product acceptance
+
+Dima marked the phone prototype **done** on 20 Nov 2026. This closes the remaining Phase 1 physical-phone acceptance gate; it does not change the implementation verdict or authorize external Jira writes.
+
 ### Scope and remaining acceptance
 
-READY covers the implemented local prototype, not production hosting, physical-phone certification, external publication, or delivery verification. Dima's actual use and confirmation that it beats a conventional backlog remain the Phase 1 product exit gate.
+READY covers the implemented local prototype, not production hosting, external publication, or delivery verification. Physical-phone and product-owner acceptance passed on Dima's word. External Jira sync is a separate gated phase.

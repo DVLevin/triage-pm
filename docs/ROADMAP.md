@@ -15,7 +15,7 @@ No dates are committed here. Each phase has an explicit gate.
 
 **Exit gate:** the product owner approves the baseline and rules on review position, proposal staging, integration home, feedback propagation, and pilot boundary.
 
-## Phase 1 — mobile KBOS review prototype (current)
+## Phase 1 — mobile KBOS review prototype (accepted 20 Nov 2026)
 
 **Deliverables**
 
@@ -25,7 +25,7 @@ No dates are committed here. Each phase has an explicit gate.
 - Configurable source inclusion and deterministic hard rules, versioned with each review.
 - Tests for decision integrity, undo, comment attachment, source immutability, and progress calculation.
 
-**Exit gate:** the product owner can review a real pilot queue without instructions and confirms the interaction is faster than reading a conventional backlog.
+**Exit gate:** **PASSED 20 Nov 2026.** Dima marked the phone prototype done. Independent mobile review was READY and 14 tests passed.
 
 ## Phase 2 — read-only integration
 
@@ -35,14 +35,16 @@ No dates are committed here. Each phase has an explicit gate.
 - Source-link resolution and read-only GitHub evidence.
 - No Jira writes and no automatic status changes.
 - Baseline measurement of review latency, coverage, and return reasons.
+- Read-only Atlassian destination discovery: Cone Red CR and Personal Tasks PT verified 20 Nov 2026; no other projects claimed.
 
 **Exit gate:** source links and proposal states reconcile with the real pipeline; no duplicate active backlog is introduced.
 
-## Phase 3 — controlled publication pilot
+## Phase 3 — controlled Jira sync pilot (next; blocked on dedicated CR credential)
 
 **Deliverables**
 
-- Approved proposals publish to one approved Jira or Linear team/project.
+- Approved proposals publish or link to one approved Jira project through a separate explicit action.
+- Mapped tickets expose valid Jira workflow transitions; inbound Jira state reconciles without overwriting KBOS intent.
 - Needs-work feedback returns to the proposal producer.
 - Idempotent writes, audit history, failure handling, and rollback procedure.
 - One reviewer, one project, one proposal source.

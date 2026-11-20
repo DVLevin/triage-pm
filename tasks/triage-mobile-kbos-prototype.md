@@ -5,7 +5,7 @@ created: 2026-11-20
 owner: conny
 tier: A1
 type: build
-state: review
+state: done
 terminal_states: [READY, READY WITH NOTES, BLOCKED]
 dod:
   - "The local app lists configured KBOS projects and reads real TASK_CARD v1.1 files without changing their bytes → evidence: automated adapter tests plus source-hash check in .planning/01-mobile-kbos-prototype/VERIFICATION.md"
@@ -25,7 +25,7 @@ context:
   - "~/Desktop/nous_claw/conny-home/templates/TASK_CARD.md — sources answer why; context answers what to load first; null is preferable to invention"
   - "~/Desktop/nous_claw/conny-home/VERDICT_PROTOCOL.md — this file names where the review terminates"
   - "Real local KBOS roots are supplied through ignored config.local.json; private source content must not be committed."
-next: "Dima opens the printed local pairing URL on his phone, reviews a representative Granat or Cone Red card, and confirms whether the flow is faster than the conventional backlog."
+next: "Phase 1 accepted by Dima on 20 Nov 2026. Continue with tasks/triage-jira-sync-pilot.md after its CR credential blocker is resolved."
 updated: 2026-11-20
 ---
 # Build the mobile KBOS ticket-review prototype

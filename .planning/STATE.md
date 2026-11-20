@@ -1,18 +1,17 @@
 # Prototype state
 
-**Current phase:** 1 — mobile KBOS review prototype  
-**Started:** 20 Nov 2026  
-**Owner:** Conny  
-**Approval:** Dima explicitly requested implementation on 20 Nov 2026.
+**Phase 1:** ACCEPTED — Dima marked the mobile prototype done on 20 Nov 2026 after using it.
+**Next phase:** controlled Jira sync pilot, currently blocked on a dedicated CR credential.
+**Owner:** Conny
 
-## Active hypothesis
+## Validated hypothesis
 
-A local mobile web app can make source-grounded task review usable if it leads with project truth and the reason a task exists, while keeping execution status and review status distinct.
+A local mobile web app makes source-grounded task review usable when it leads with project truth and the reason a task exists, while keeping execution status and review status distinct. Independent recipient-eyes verdict: READY; Dima accepted the physical-phone result.
 
 ## Current boundary
 
-Read-only KBOS adapters; local SQLite review store; no tracker publication, external messages, AI summaries, or automatic completion claims.
+Read-only KBOS adapters; local SQLite review store; no tracker publication or automatic completion claims. Read-only Atlassian discovery verified Cone Red CR and Personal Tasks PT. No external Jira write has occurred from Triage.
 
 ## Next
 
-Freeze UI-SPEC, implement, run automated and mobile-browser verification, then record the terminal verdict in `01-mobile-kbos-prototype/VERDICT.md`.
+`tasks/triage-jira-sync-pilot.md` defines the controlled CR integration, status transitions, mapping, conflict handling, and terminal verdict. Do not enable writes until the dedicated credential and destination are verified.
