@@ -27,6 +27,10 @@ STATIC_FILES = {
     "/kingdom-conny.png": ("kingdom-conny.png", "image/png"),
     "/kingdom-dima.png": ("kingdom-dima.png", "image/png"),
     "/kingdom-goblin.png": ("kingdom-goblin.png", "image/png"),
+    "/engineer": ("engineer.html", "text/html; charset=utf-8"),
+    "/engineer.html": ("engineer.html", "text/html; charset=utf-8"),
+    "/engineer.css": ("engineer.css", "text/css; charset=utf-8"),
+    "/engineer.js": ("engineer.js", "text/javascript; charset=utf-8"),
 }
 CSP = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
 

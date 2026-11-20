@@ -1,6 +1,6 @@
 # KBOS Kingdom — Royal Decree concept
 
-Open `/kingdom` on the running local server, or use **Discuss this exact ticket with Conny** at the bottom of a real Review card. This is an interactive **real-ticket / demo-action concept**, not a voice or Jira implementation. It reads the authenticated current snapshot, records no audio, and performs no writes.
+Open `/kingdom` on the running local server, or use **Discuss this exact ticket with Conny** at the bottom of a real Review card. **View as engineer** opens the clean recipient lens without fantasy/commentary; see `ENGINEER_VIEW.md`. This Kingdom page is an interactive **real-ticket / demo-action concept**, not a voice or Jira implementation. It reads the authenticated current snapshot, records no audio, and performs no writes.
 
 ## What the concept demonstrates
 

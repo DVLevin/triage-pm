@@ -14,6 +14,8 @@ If needed, install the single Python dependency first with `python3 -m pip insta
 
 The interactive **KBOS Kingdom / Royal Decree** visual concept is available at `/kingdom` and from each ticket's “Discuss this exact ticket with Conny” link. It loads the real ticket, why, impact, source intent, and current KBOS context, then demonstrates a clearly marked sample voice action with per-change provenance. It records no audio and performs no Jira writes. See [Kingdom concept](docs/KINGDOM.md).
 
+**Engineer view** is available at `/engineer` and directly from each Review card. It separates the exact current KBOS task from a clearly marked future Jira payload preview, with a field-coverage preflight and the original Markdown. See [Engineer recipient view](docs/ENGINEER_VIEW.md).
+
 ## Why this project
 
 As engineering teams use AI to turn calls, documents, and project history into tickets, they create a new review bottleneck. Generated tickets may contain irrelevant detail, contradictory requirements, duplicate work, or tasks nobody requested. Engineers must decode and correct tickets before they can start delivering.

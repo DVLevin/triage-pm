@@ -30,6 +30,7 @@
     ticket = selected;
     localStorage.setItem("triage_project", snapshot.project.id);
     localStorage.setItem(`triage_ticket:${snapshot.project.id}`, ticket.key);
+    $("#engineer-link").href = `/engineer?project=${encodeURIComponent(snapshot.project.id)}&ticket=${encodeURIComponent(ticket.key)}`;
     $("#project-label").textContent = `${snapshot.project.name.toUpperCase()} · KBOS ${new Date(snapshot.scanned_at).toLocaleString("en", {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`;
     $("#ticket-id").textContent = `${ticket.display_id} · ${ticket.priority} · ${STATUS[ticket.work_status] || ticket.work_status}`;
     $("#ticket-title").textContent = ticket.title;

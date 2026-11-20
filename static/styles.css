@@ -216,6 +216,8 @@ textarea { min-height: 108px; resize: vertical; }
 .context-excerpt > summary { display: flex; align-items: center; min-height: 48px; }
 .kingdom-link { display: flex; align-items: center; justify-content: center; min-height: 48px; margin: 12px 16px 16px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; color: var(--brand); background: var(--raised); font-size: 13px; font-weight: 750; text-align: center; text-decoration: none; }
 .kingdom-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.view-links { display: grid; gap: 8px; margin: 12px 16px 16px; }
+.view-links .kingdom-link { margin: 0; }
 @media (min-width: 760px) {
   .main-content { padding-top: 28px; }
   .ticket-hero { padding: 28px; }

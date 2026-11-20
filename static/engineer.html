@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101714">
+  <title>Engineer view · Triage</title>
+  <link rel="stylesheet" href="/kingdom.css">
+  <link rel="stylesheet" href="/engineer.css">
+</head>
+<body>
+  <main class="kingdom-shell engineer-shell">
+    <header class="engineer-header"><div class="eyebrow">RECIPIENT LENS · NO AI REWRITE</div><h1>Engineer view</h1><p>Validate what the engineer receives and whether the task carries enough context to start.</p></header>
+    <nav class="lens-nav" aria-label="Ticket views"><a id="dima-link" href="/kingdom">← Dima / Royal Decree</a><a href="/">Review queue</a></nav>
+    <div id="load-error" class="load-error" role="alert" hidden></div>
+
+    <div class="mode-tabs" role="tablist" aria-label="Engineer source view">
+      <button type="button" id="kbos-tab" role="tab" aria-selected="true">KBOS now</button>
+      <button type="button" id="jira-tab" role="tab" aria-selected="false">Jira preview</button>
+    </div>
+    <div class="truth-banner" id="truth-banner"></div>
+
+    <div id="engineer-content" hidden>
+      <section class="coverage" aria-labelledby="coverage-title"><h2 id="coverage-title">Can they start?</h2><p>Coverage only. The engineer’s actual understanding still needs their confirmation.</p><div id="coverage-list" class="coverage-list"></div></section>
+
+      <article class="engineer-card">
+        <div class="ticket-kicker" id="ticket-id"></div>
+        <h2 id="ticket-title"></h2>
+        <div class="engineer-meta" id="ticket-meta"></div>
+        <section class="next-task"><span>YOUR NEXT ACTION</span><strong id="ticket-next"></strong></section>
+
+        <section class="engineer-section"><h3>Why this matters / why it was suggested</h3><p id="ticket-why"></p><div id="why-evidence-wrap" hidden><h4>Direct evidence</h4><p id="why-evidence"></p></div></section>
+        <section class="engineer-section"><h3>Definition of Done</h3><div id="ticket-dod"></div></section>
+        <section class="engineer-section"><h3>Impact & dependencies</h3><div id="ticket-impact"></div></section>
+        <section class="engineer-section"><h3>Blockers & open questions</h3><div id="ticket-blockers"></div></section>
+        <section class="engineer-section"><h3>Context to read</h3><div id="ticket-context"></div></section>
+        <section class="engineer-section"><h3>Scope fence</h3><p id="ticket-scope"></p></section>
+        <section class="engineer-section"><h3>Artifacts</h3><div id="ticket-artifacts"></div></section>
+        <section class="engineer-section"><h3>Source intent</h3><div id="ticket-sources"></div></section>
+        <details class="original-record"><summary>Original KBOS Markdown · verbatim</summary><p id="ticket-path"></p><pre id="ticket-raw"></pre></details>
+      </article>
+    </div>
+  </main>
+  <script src="/engineer.js"></script>
+</body>
+</html>
