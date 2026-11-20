@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101714">
+  <title>Royal Decree · KBOS Kingdom</title>
+  <link rel="stylesheet" href="/kingdom.css">
+</head>
+<body>
+  <main class="kingdom-shell">
+    <header class="realm-header">
+      <div>
+        <div class="eyebrow">KBOS KINGDOM · CONCEPT</div>
+        <h1>Royal Decree</h1>
+      </div>
+      <img class="arbiter" src="/kingdom-dima.png" alt="Symbolic High Arbiter avatar, not Dima's likeness">
+    </header>
+
+    <div class="realm-status"><span>GRANAT · JIRA CR</span><span>LOCAL · APPROVAL-GATED</span></div>
+
+    <section class="advisor" aria-labelledby="advisor-name">
+      <img src="/kingdom-conny.png" alt="Conny, the Court Wizard">
+      <div>
+        <div class="advisor-name" id="advisor-name">Conny · Court Wizard</div>
+        <p id="advisor-line">My liege, the Scope Goblin has stolen another DoD. Also, “Friday” is not a date. I’ve chosen not to bullshit you.</p>
+      </div>
+    </section>
+
+    <section class="decree-card">
+      <div class="decree-heading"><span>YOUR VOICE, MY LIEGE</span><span>0:11 · DEMO</span></div>
+      <blockquote>“Conny, mark this blocked, ask Takhir for the design link, and move the deadline to Friday.”</blockquote>
+      <div class="pipeline">Parakeet on this Mac → Conny interpretation → your approval</div>
+    </section>
+
+    <section class="proposal" aria-labelledby="proposal-title">
+      <div class="section-title" id="proposal-title">PROPOSED CHANGES</div>
+
+      <div class="change-row">
+        <div class="change-icon">⚔</div>
+        <div><span class="change-label">Jira status</span><strong>Not started → Blocked</strong><small>Exact workflow transition still requires live verification</small></div>
+      </div>
+
+      <div class="change-row">
+        <div class="change-icon">✉</div>
+        <div><span class="change-label">Draft Jira comment</span><strong>Takhir, please send the design link.</strong><small>No message is sent without this decree</small></div>
+      </div>
+
+      <div class="date-choice">
+        <div class="date-copy"><span class="change-label">Due date</span><strong>Which Friday, exactly?</strong></div>
+        <div class="date-options" role="group" aria-label="Choose the intended Friday">
+          <button type="button" data-date="27 Nov 2026" aria-pressed="false">27 Nov</button>
+          <button type="button" data-date="4 Dec 2026" aria-pressed="false">4 Dec</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="goblin-note">
+      <img src="/kingdom-goblin.png" alt="The Scope Goblin carrying stolen scrolls">
+      <p><strong>Traceability intact.</strong><br>Audio + transcript would be hashed before execution. This concept contains no real audio and writes nothing.</p>
+    </section>
+
+    <div class="decree-actions">
+      <button class="reject" type="button" id="reject">Send it back</button>
+      <button class="seal" type="button" id="approve" disabled>Choose the Friday first</button>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="/kingdom.js"></script>
+</body>
+</html>

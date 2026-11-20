@@ -20,6 +20,13 @@ STATIC_FILES = {
     "/icon.svg": ("icon.svg", "image/svg+xml"),
     "/icon-192.png": ("icon-192.png", "image/png"),
     "/icon-512.png": ("icon-512.png", "image/png"),
+    "/kingdom": ("kingdom.html", "text/html; charset=utf-8"),
+    "/kingdom.html": ("kingdom.html", "text/html; charset=utf-8"),
+    "/kingdom.css": ("kingdom.css", "text/css; charset=utf-8"),
+    "/kingdom.js": ("kingdom.js", "text/javascript; charset=utf-8"),
+    "/kingdom-conny.png": ("kingdom-conny.png", "image/png"),
+    "/kingdom-dima.png": ("kingdom-dima.png", "image/png"),
+    "/kingdom-goblin.png": ("kingdom-goblin.png", "image/png"),
 }
 CSP = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
 

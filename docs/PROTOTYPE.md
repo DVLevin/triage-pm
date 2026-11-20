@@ -41,7 +41,7 @@ Review data lives in ignored `data/triage.db`. Raw KBOS excerpts are not copied 
 
 ## PWA boundary
 
-The manifest, icons, and app-shell service worker are included. On a secure context the shell caches successfully. **No card or context response is cached offline.** Plain LAN HTTP is enough for online phone viewing, but offline installation/use is not promised; use locally trusted HTTPS later if that becomes a requirement.
+The manifest, icons, and app-shell service worker are included. On a secure context the shell caches successfully. **No card or context response is cached offline.** Plain LAN HTTP is enough for online phone viewing, but offline installation/use is not promised; phone microphone capture for the planned voice workflow requires a secure context, so private HTTPS is a prerequisite rather than an optional polish item.
 
 ## Verification
 

@@ -12,6 +12,8 @@ python3 run.py --lan
 
 If needed, install the single Python dependency first with `python3 -m pip install -r requirements.txt`. Open the printed pairing URL from a phone on the same Wi-Fi. Full instructions and trust semantics: [prototype guide](docs/PROTOTYPE.md).
 
+The interactive **KBOS Kingdom / Royal Decree** visual concept is available at `/kingdom`. It demonstrates the original pixel-art cast and voice-approval UX with demo data only; it records no audio and performs no Jira writes. See [Kingdom concept](docs/KINGDOM.md).
+
 ## Why this project
 
 As engineering teams use AI to turn calls, documents, and project history into tickets, they create a new review bottleneck. Generated tickets may contain irrelevant detail, contradictory requirements, duplicate work, or tasks nobody requested. Engineers must decode and correct tickets before they can start delivering.
