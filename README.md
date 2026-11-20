@@ -12,7 +12,7 @@ python3 run.py --lan
 
 If needed, install the single Python dependency first with `python3 -m pip install -r requirements.txt`. Open the printed pairing URL from a phone on the same Wi-Fi. Full instructions and trust semantics: [prototype guide](docs/PROTOTYPE.md).
 
-The interactive **KBOS Kingdom / Royal Decree** visual concept is available at `/kingdom`. It demonstrates the original pixel-art cast and voice-approval UX with demo data only; it records no audio and performs no Jira writes. See [Kingdom concept](docs/KINGDOM.md).
+The interactive **KBOS Kingdom / Royal Decree** visual concept is available at `/kingdom` and from each ticket's “Discuss this exact ticket with Conny” link. It loads the real ticket, why, impact, source intent, and current KBOS context, then demonstrates a clearly marked sample voice action with per-change provenance. It records no audio and performs no Jira writes. See [Kingdom concept](docs/KINGDOM.md).
 
 ## Why this project
 

@@ -10,60 +10,46 @@
 <body>
   <main class="kingdom-shell">
     <header class="realm-header">
-      <div>
-        <div class="eyebrow">KBOS KINGDOM · CONCEPT</div>
-        <h1>Royal Decree</h1>
-      </div>
+      <div><div class="eyebrow">KBOS KINGDOM · REAL TICKET / DEMO ACTION</div><h1>Royal Decree</h1></div>
       <img class="arbiter" src="/kingdom-dima.png" alt="Symbolic High Arbiter avatar, not Dima's likeness">
     </header>
+    <div class="realm-status"><span id="project-label">LOADING REAL TICKET</span><span>LOCAL · DEMO ONLY</span></div>
+    <a class="back-link" href="/">← Back to the Review queue</a>
+    <div id="load-error" class="load-error" role="alert" hidden></div>
 
-    <div class="realm-status"><span>GRANAT · JIRA CR</span><span>LOCAL · APPROVAL-GATED</span></div>
+    <section class="ticket-brief" aria-labelledby="ticket-title" id="ticket-brief" hidden>
+      <div class="ticket-kicker" id="ticket-id"></div>
+      <h2 id="ticket-title"></h2>
+      <div class="ticket-meta" id="ticket-meta"></div>
+
+      <div class="brief-block"><h3>Why this ticket exists / was suggested</h3><p id="ticket-why"></p></div>
+      <div class="brief-block" id="why-evidence-wrap" hidden><h3>Direct why evidence</h3><p id="why-evidence"></p></div>
+      <div class="brief-block"><h3>Impact on delivery</h3><div id="ticket-impact"></div></div>
+      <div class="brief-block"><h3>Source intent</h3><ul id="ticket-sources"></ul></div>
+      <div class="brief-block"><h3>Context used for this review</h3><div id="ticket-context"></div></div>
+      <div class="source-path" id="ticket-path"></div>
+    </section>
 
     <section class="advisor" aria-labelledby="advisor-name">
       <img src="/kingdom-conny.png" alt="Conny, the Court Wizard">
-      <div>
-        <div class="advisor-name" id="advisor-name">Conny · Court Wizard</div>
-        <p id="advisor-line">My liege, the Scope Goblin has stolen another DoD. Also, “Friday” is not a date. I’ve chosen not to bullshit you.</p>
-      </div>
+      <div><div class="advisor-name" id="advisor-name">Conny · Court Wizard</div><p id="advisor-line">First the ticket. Then its context. Then the proposed change. No royal hand-waving.</p></div>
     </section>
 
     <section class="decree-card">
-      <div class="decree-heading"><span>YOUR VOICE, MY LIEGE</span><span>0:11 · DEMO</span></div>
+      <div class="decree-heading"><span>EXAMPLE VOICE COMMAND</span><span>DEMO · NOT RECORDED</span></div>
       <blockquote>“Conny, mark this blocked, ask Takhir for the design link, and move the deadline to Friday.”</blockquote>
-      <div class="pipeline">Parakeet on this Mac → Conny interpretation → your approval</div>
+      <div class="pipeline">This is sample text, not Parakeet output. In production: real audio → local Parakeet → this exact ticket → your approval.</div>
     </section>
 
     <section class="proposal" aria-labelledby="proposal-title">
-      <div class="section-title" id="proposal-title">PROPOSED CHANGES</div>
-
-      <div class="change-row">
-        <div class="change-icon">⚔</div>
-        <div><span class="change-label">Jira status</span><strong>Not started → Blocked</strong><small>Exact workflow transition still requires live verification</small></div>
-      </div>
-
-      <div class="change-row">
-        <div class="change-icon">✉</div>
-        <div><span class="change-label">Draft Jira comment</span><strong>Takhir, please send the design link.</strong><small>No message is sent without this decree</small></div>
-      </div>
-
-      <div class="date-choice">
-        <div class="date-copy"><span class="change-label">Due date</span><strong>Which Friday, exactly?</strong></div>
-        <div class="date-options" role="group" aria-label="Choose the intended Friday">
-          <button type="button" data-date="27 Nov 2026" aria-pressed="false">27 Nov</button>
-          <button type="button" data-date="4 Dec 2026" aria-pressed="false">4 Dec</button>
-        </div>
-      </div>
+      <div class="section-title" id="proposal-title">PROPOSED CHANGES & WHY</div>
+      <div class="change-row"><div class="change-icon">⚔</div><div><span class="change-label">Jira status · from example voice</span><strong id="status-change">Current state → Blocked</strong><small>No ticket source requested this transition. A live Jira transition would still need verification.</small></div></div>
+      <div class="change-row"><div class="change-icon">✉</div><div><span class="change-label">Draft Jira comment · from example voice</span><strong>Takhir, please send the design link.</strong><small id="comment-rationale">The example voice named Takhir.</small></div></div>
+      <div class="date-choice"><div class="date-copy"><span class="change-label">Due date · ambiguous voice phrase</span><strong>Why Friday?</strong><p class="rationale">Only because this example voice command says “Friday.” No Friday deadline is inferred from the ticket or KBOS.</p><small id="current-due"></small></div><div class="date-options" role="group" aria-label="Choose the intended Friday"><button type="button" data-date="27 Nov 2026" aria-pressed="false">27 Nov</button><button type="button" data-date="4 Dec 2026" aria-pressed="false">4 Dec</button></div></div>
     </section>
 
-    <section class="goblin-note">
-      <img src="/kingdom-goblin.png" alt="The Scope Goblin carrying stolen scrolls">
-      <p><strong>Traceability intact.</strong><br>Audio + transcript would be hashed before execution. This concept contains no real audio and writes nothing.</p>
-    </section>
-
-    <div class="decree-actions">
-      <button class="reject" type="button" id="reject">Send it back</button>
-      <button class="seal" type="button" id="approve" disabled>Choose the Friday first</button>
-    </div>
+    <section class="goblin-note"><img src="/kingdom-goblin.png" alt="The Scope Goblin carrying stolen scrolls"><p><strong>Provenance before magic.</strong><br>Every production action must name its source: ticket, KBOS, voice, inference, or your explicit choice. Unknown stays unknown.</p></section>
+    <div class="decree-actions"><button class="reject" type="button" id="reject">Send it back</button><button class="seal" type="button" id="approve" disabled>Choose the Friday first</button></div>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </main>
   <script src="/kingdom.js"></script>

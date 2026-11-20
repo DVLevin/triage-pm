@@ -17,7 +17,7 @@ The server binds loopback by default. `--lan` listens on all interfaces and requ
 
 ## The three tabs
 
-- **Review:** one current card at a time. Read why, owner, due context, next action, evidence, impact, DoD, sources, scope, comments, and the complete source record. Approve or return with a structured needs-work reason. Buttons are primary; header swipe and A/N/U keyboard commands are equivalents. Undo is available after a decision and in Progress.
+- **Review:** one current card at a time. Read why, owner, due context, next action, evidence, impact, DoD, sources, scope, comments, and the complete source record. Approve or return with a structured needs-work reason. Buttons are primary; header swipe and A/N/U keyboard commands are equivalents. Undo is available after a decision and in Progress. **Discuss this exact ticket with Conny** opens the Royal Decree concept bound to the same ticket and context; its sample action remains demo-only.
 - **Progress:** current-version review coverage, recorded work states, timeline coverage, past recorded due dates, explicit/reported blockers, parser errors, duplicate IDs, decision history, and individual review points.
 - **Context:** configured KBOS files with bounded excerpts and modification/freshness signals. Include/exclude sources and change deterministic approval rules, then **Apply to new review snapshot**. Existing decisions retain the context version under which they were made.
 

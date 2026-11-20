@@ -45,6 +45,25 @@ blockquote { margin: 14px 0; padding-left: 12px; border-left: 3px solid var(--am
 .seal:disabled { border-color: var(--line); background: #26312c; color: #a9b5b0; }
 .toast { min-height: 22px; margin-top: 12px; color: var(--green); font-size: 12px; line-height: 1.4; text-align: center; }
 button:focus-visible { outline: 3px solid #80aef5; outline-offset: 3px; }
+.back-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--green); font-size: 13px; text-decoration: none; }
+.load-error { margin: 12px 0; padding: 16px; border: 1px solid #7a5148; border-radius: 12px; background: var(--rust-dark); color: var(--rust); }
+.load-error p { margin-bottom: 0; }.load-error a { color: var(--green); }
+.ticket-brief { margin: 6px 0 16px; padding: 17px; border: 1px solid #76613d; border-radius: 16px; background: var(--surface); box-shadow: 4px 4px 0 #080c0a; }
+.ticket-kicker { color: var(--amber); font: 700 11px/1.4 ui-monospace, monospace; overflow-wrap: anywhere; }
+.ticket-brief h2 { margin: 8px 0 10px; font-size: 24px; line-height: 1.22; letter-spacing: -.35px; overflow-wrap: anywhere; }
+.ticket-meta { color: var(--secondary); font-size: 12px; line-height: 1.5; }
+.brief-block { margin-top: 16px; padding-top: 13px; border-top: 1px solid var(--line); }
+.brief-block h3 { margin: 0 0 7px; color: var(--amber); font: 750 12px/1.4 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .4px; }
+.brief-block h4 { margin: 12px 0 6px; color: var(--green); font-size: 12px; }
+.brief-block p, .brief-block li { font-size: 14px; line-height: 1.48; }
+.brief-block p { margin: 0; }.brief-block ul { margin: 0; padding-left: 20px; }.brief-block li + li { margin-top: 7px; }
+.missing-fact { color: var(--rust); }
+.source-path { margin-top: 15px; color: var(--secondary); font: 11px/1.5 ui-monospace, monospace; overflow-wrap: anywhere; }
+.context-file { padding: 8px 0; }.context-file strong, .context-file small { display: block; overflow-wrap: anywhere; }.context-file small { margin-top: 3px; color: var(--secondary); font-size: 11px; }
+.context-file details summary { display: flex; align-items: center; min-height: 44px; color: var(--green); font-size: 12px; cursor: pointer; }
+pre { max-height: 340px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--secondary); font: 11px/1.5 ui-monospace, monospace; }
+.rationale { margin: 5px 0; color: var(--secondary); font-size: 13px; line-height: 1.45; }
+.date-copy > small { display: block; margin-top: 6px; color: var(--secondary); font-size: 11px; line-height: 1.4; }
 @media (max-width: 355px) { .kingdom-shell { padding-left: 12px; padding-right: 12px; } .advisor { grid-template-columns: 76px 1fr; } .advisor img { width: 76px; height: 100px; } .advisor > div { min-height: 100px; padding: 10px; } h1 { font-size: 27px; } }
 @media (min-width: 700px) { .kingdom-shell { padding-top: 32px; } }
 @media (prefers-reduced-motion: no-preference) { .advisor img { animation: arrive .35s ease-out; } @keyframes arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } } }
