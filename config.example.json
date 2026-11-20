@@ -1,0 +1,13 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "projects": [
+    {
+      "id": "project-a",
+      "name": "Project A",
+      "root": "/absolute/path/to/project",
+      "ticket_dirs": ["tickets"],
+      "context_files": ["README.md", "OPEN_LOOPS.md", "WEEK.md", "UPDATES.md", "DECISIONS.md", "JOURNAL.md", "AGENTS.md"]
+    }
+  ]
+}

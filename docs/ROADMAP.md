@@ -2,7 +2,9 @@
 
 No dates are committed here. Each phase has an explicit gate.
 
-## Phase 0 — product baseline (current)
+> **20 Nov 2026:** Dima approved implementation and real read-only KBOS sources. Phase 1 therefore combines the isolated review overlay with local read-only adapters. External publication and feedback propagation remain in Phase 3; no external writes were added.
+
+## Phase 0 — product baseline (approved)
 
 **Deliverables**
 
@@ -13,15 +15,17 @@ No dates are committed here. Each phase has an explicit gate.
 
 **Exit gate:** the product owner approves the baseline and rules on review position, proposal staging, integration home, feedback propagation, and pilot boundary.
 
-## Phase 1 — isolated review prototype
+## Phase 1 — mobile KBOS review prototype (current)
 
 **Deliverables**
 
-- Fictional proposal data only.
+- Real read-only KBOS proposal/context import with explicit v1.1 and legacy profiles.
+- Mobile-first Review / Progress / Context surfaces.
 - One-card review, swipe plus accessible controls, full ticket view, comments, undo, history, points, levels, and local persistence.
-- Basic tests for decision integrity, undo, comment attachment, and progress calculation.
+- Configurable source inclusion and deterministic hard rules, versioned with each review.
+- Tests for decision integrity, undo, comment attachment, source immutability, and progress calculation.
 
-**Exit gate:** the product owner can review the complete fictional queue without instructions and confirms the interaction is faster than reading a conventional backlog.
+**Exit gate:** the product owner can review a real pilot queue without instructions and confirms the interaction is faster than reading a conventional backlog.
 
 ## Phase 2 — read-only integration
 

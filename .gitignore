@@ -3,3 +3,17 @@
 .env.*
 !.env.example
 *.local
+
+# Runtime configuration, pairing token, and review data
+config.local.json
+data/
+.runtime/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Verification captures can contain private KBOS content
+*.playwright-artifacts

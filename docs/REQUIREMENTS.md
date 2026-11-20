@@ -2,6 +2,8 @@
 
 Priority means proposed pilot scope, not a committed delivery plan.
 
+> **20 Nov 2026 implementation variation approved by Dima:** the prototype reads real local KBOS cards/context instead of fictional-only data, supports explicit legacy profiles, and stores a local review overlay. This is read-only integration; Jira/Linear publication and external feedback remain unimplemented and separately gated.
+
 ## P0 — review prototype
 
 ### Review queue

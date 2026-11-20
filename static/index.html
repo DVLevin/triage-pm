@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#175A4C">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Local, source-grounded review for KBOS task cards.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Triage — local KBOS review</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to review content</a>
+  <div class="app-shell" id="app">
+    <header class="topbar" id="topbar">
+      <button class="brand" type="button" data-action="projects" aria-label="Switch project">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 8h18M7 16h12M7 24h7"/><path class="brand-check" d="m19 22 3 3 5-7"/></svg>
+        <span>Triage</span>
+      </button>
+      <span class="local-badge">Local · read only</span>
+      <button class="icon-button" type="button" data-action="refresh" aria-label="Refresh KBOS snapshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.34 5.66M20 4v7h-7"/></svg>
+      </button>
+    </header>
+    <main id="main" class="main-content" tabindex="-1">
+      <div class="loading-state" role="status"><span class="spinner" aria-hidden="true"></span><p>Reading the local KBOS snapshot…</p></div>
+    </main>
+    <div id="decision-bar" class="decision-bar"></div>
+    <nav class="bottom-nav" id="bottom-nav" aria-label="Primary navigation"></nav>
+  </div>
+  <dialog id="app-dialog" class="sheet" aria-labelledby="dialog-title"></dialog>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

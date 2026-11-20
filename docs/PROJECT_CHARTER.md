@@ -6,9 +6,13 @@ Establish the smallest trustworthy review layer between AI-generated ticket prop
 
 ## Current deliverable
 
-This phase delivers only the aligned product baseline: vision, requirements, conceptual architecture, current-state assumptions, roadmap, and source traceability.
+**Superseded 20 Nov 2026:** Dima explicitly approved a working mobile prototype connected read-only to real local KBOS projects. The current deliverable is the local web/PWA prototype described in `docs/PROTOTYPE.md`, with Triage-owned local review persistence and no external publication.
 
-No application, integration, deployment, or production claim is part of this phase.
+The original docs-only baseline below remains the historical Phase 0 record. No production integration or customer result is claimed.
+
+## Original Phase 0 deliverable
+
+Phase 0 delivered only the aligned product baseline: vision, requirements, conceptual architecture, current-state assumptions, roadmap, and source traceability. No application, integration, deployment, or production claim belonged to that phase.
 
 ## Initial scope
 
